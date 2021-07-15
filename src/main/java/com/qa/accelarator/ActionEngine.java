@@ -7,7 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.reports.Reporter;
 public class ActionEngine  extends TestEngine{
@@ -1978,5 +1980,11 @@ public class ActionEngine  extends TestEngine{
 			Reporter.fail("All Selected Option Text " + strDescription,"Element Option : No Option Found");
 		}
 		return blnStatus;
+	}
+	
+	public void fnWaitForElement(By loc)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loc));
 	}
 }

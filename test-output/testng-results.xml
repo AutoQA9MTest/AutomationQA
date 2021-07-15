@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation suite" duration-ms="23132" started-at="2021-06-15T17:15:07Z" finished-at="2021-06-15T17:15:30Z">
+    <groups>
+    </groups>
+    <test name="chrome test" duration-ms="23132" started-at="2021-06-15T17:15:07Z" finished-at="2021-06-15T17:15:30Z">
+      <class name="com.qa.test.OrangeHRM">
+        <test-method status="PASS" signature="fnCrreateTestSuite()[pri:0, instance:com.qa.test.OrangeHRM@1936f0f5]" name="fnCrreateTestSuite" is-config="true" duration-ms="278" started-at="2021-06-15T22:45:07Z" finished-at="2021-06-15T22:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnCrreateTestSuite -->
+        <test-method status="PASS" signature="fnIntilizeDriver(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.qa.test.OrangeHRM@1936f0f5]" name="fnIntilizeDriver" is-config="true" duration-ms="2418" started-at="2021-06-15T22:45:07Z" finished-at="2021-06-15T22:45:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.qa.test.OrangeHRM.fnOrangeHRM()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnIntilizeDriver -->
+        <test-method status="PASS" signature="fnOrangeHRM()[pri:0, instance:com.qa.test.OrangeHRM@1936f0f5]" name="fnOrangeHRM" duration-ms="9978" started-at="2021-06-15T22:45:09Z" finished-at="2021-06-15T22:45:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnOrangeHRM -->
+        <test-method status="PASS" signature="fnCloseDriver()[pri:0, instance:com.qa.test.OrangeHRM@1936f0f5]" name="fnCloseDriver" is-config="true" duration-ms="10727" started-at="2021-06-15T22:45:19Z" finished-at="2021-06-15T22:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnCloseDriver -->
+        <test-method status="PASS" signature="fnEndTestSuitte()[pri:0, instance:com.qa.test.OrangeHRM@1936f0f5]" name="fnEndTestSuitte" is-config="true" duration-ms="317" started-at="2021-06-15T22:45:30Z" finished-at="2021-06-15T22:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fnEndTestSuitte -->
+      </class> <!-- com.qa.test.OrangeHRM -->
+    </test> <!-- chrome test -->
+  </suite> <!-- Automation suite -->
+</testng-results>

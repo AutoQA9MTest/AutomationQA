@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation suite">
+  <test verbose="2" name="chrome test" thread-count="2">
+  	<parameter name="Browser" value="chrome" />
+    <classes>
+      <class name="com.qa.test.OrangeHRM"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

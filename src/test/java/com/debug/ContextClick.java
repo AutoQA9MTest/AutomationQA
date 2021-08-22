@@ -8,16 +8,16 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Slider {
+public class ContextClick {
 
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://demo.automationtesting.in/Slider.html");
-		WebElement elem=driver.findElement(By.xpath("//div[@id='slider']"));
+		driver.get("http://demo.automationtesting.in/Register.html");
+		WebElement elem=driver.findElement(By.xpath("//h2[contains(text(),'Register')]"));
 		Actions actions=new Actions(driver);
-		actions.dragAndDropBy(elem,10,0).build().perform();
+		actions.contextClick(elem).build().perform();
 
 	}
 

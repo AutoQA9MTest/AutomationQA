@@ -22,15 +22,15 @@ public class CameraAccess {
 	    WebDriver driver = new ChromeDriver(caps);
 	    //WebCam Test
 	    driver.get("https://webcamtests.com/check");
-	    Thread.sleep(5000);
+	    Thread.sleep(10000);
 	    driver.findElement(By.id("webcam-launcher")).click();
-	    Thread.sleep(5000);
+	    Thread.sleep(10000);
 
 	    //Mic Test
 	    driver.get("https://www.vidyard.com/mic-test/");
-	    Thread.sleep(5000);
+	    Thread.sleep(10000);
 	    driver.findElement(By.xpath("//a[@id='start-test']")).click();
-	    Thread.sleep(5000);
+	    Thread.sleep(10000);
 
 	    driver.quit();
 

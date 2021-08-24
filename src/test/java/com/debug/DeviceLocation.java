@@ -34,7 +34,7 @@ public class DeviceLocation {
 	    WebDriver driver = new ChromeDriver(caps);
 	    driver.get("https://the-internet.herokuapp.com/geolocation");
 	    driver.findElement(By.xpath("//*[@id='content']/div/button")).click();
-	    Thread.sleep(5000);
+	    Thread.sleep(10000);
 	    driver.quit();
 	}
 

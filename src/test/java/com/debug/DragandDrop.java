@@ -18,13 +18,11 @@ public class DragandDrop {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://jqueryui.com/droppable/");
-		Thread.sleep(10000);
+		driver.switchTo().frame(0);
 		WebElement elem=driver.findElement(By.xpath("//div[@id='draggable']"));
 		WebElement elemFinal=driver.findElement(By.xpath("//div[@id='droppable']"));
 		Actions actions=new Actions(driver);
-		actions.clickAndHold(elem).dragAndDrop(elem, elemFinal).build().perform();
-		
-
+		actions.dragAndDrop(elem, elemFinal).build().perform();
 	}
 
 }
